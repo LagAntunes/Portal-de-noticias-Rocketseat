@@ -1,0 +1,13 @@
+.footer {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  border-top: 1px solid var(--stroke-color);
+}
+
+/* Responsivo */
+@media (min-width: 1024px) {
+  .footer {
+    padding: 20px 34px;
+  }
+}
