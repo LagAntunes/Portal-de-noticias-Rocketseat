@@ -1,0 +1,85 @@
+.heading1 {
+  font-size: 1.5rem;
+  line-height: 135%;
+  font-weight: 900;
+  color: var(--text-color-primary);
+}
+
+.heading2 {
+  font-size: 1rem;
+  line-height: 140%;
+  font-weight: 900;
+  color: var(--text-color-primary);
+}
+
+.heading3 {
+  font-size: 0.875rem;
+  line-height: 140%;
+  font-weight: 900;
+  color: var(--text-color-primary);
+}
+
+.span,
+.link {
+  font-size: 0.875rem;
+  line-height: 145%;
+  font-weight: 600;
+  color: var(--text-color-secondary);
+  transition: all 0.3s ease-in-out;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+
+  &::before {
+    content: url("../../assets/icons/gray-arrow.svg");
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &::after {
+    content: url("../../assets/icons/blue-arrow.svg");
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover {
+    color: var(--brand-color-light);
+
+    &::before {
+      opacity: 0;
+    }
+
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  &.no-icon {
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.paragraph {
+  font-size: 0.875rem;
+  line-height: 160%;
+  font-weight: 400;
+  color: var(--text-color-secondary);
+}
+
+.small {
+  padding: 4px 8px;
+  border-radius: 5px;
+  background-color: var(--brand-color-dark);
+  font-size: 0.625rem;
+  line-height: 120%;
+  font-weight: 500;
+  color: var(--text-color-primary);
+  text-transform: uppercase;
+}
