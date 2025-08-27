@@ -83,6 +83,7 @@
 }
 
 .small {
+  width: fit-content;
   padding: 4px 8px;
   border-radius: 5px;
   background-color: var(--brand-color-dark);

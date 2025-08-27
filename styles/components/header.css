@@ -4,6 +4,7 @@
   width: 100%;
   height: auto;
   position: relative;
+  margin-bottom: 30px;
 
   & .header-top {
     width: 100%;
@@ -39,7 +40,7 @@
     left: -100%;
     right: 0;
     bottom: 0;
-    z-index: 9;
+    z-index: 99;
     transition: all 0.3s ease-in-out;
 
     & ul {
