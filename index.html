@@ -15,5 +15,39 @@
     <link rel="stylesheet" href="styles/styles.css" />
     <title>Portal de Noticias - Rocketseat</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <a href="/" class="logo">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="assets/images/logo-desktop.svg"
+            />
+            <img src="assets/images/logo-mobile.svg" alt="Logo Tech News" />
+          </picture>
+        </a>
+
+        <button class="hamburger" aria-label="Abrir menu"></button>
+
+        <form action="">
+          <input type="text" name="search" placeholder="Buscar" />
+          <button type="submit" aria-label="Buscar"></button>
+        </form>
+      </div>
+      <nav class="header-bottom">
+        <ul>
+          <li><a href="#" class="link no-icon">Inteligência Artificial</a></li>
+          <li><a href="#" class="link no-icon">Blockchain</a></li>
+          <li><a href="#" class="link no-icon">Hologramas</a></li>
+          <li><a href="#" class="link no-icon">Internet</a></li>
+          <li><a href="#" class="link no-icon">Vestíveis</a></li>
+          <li><a href="#" class="link no-icon">Realidade Aumentada</a></li>
+          <li><a href="#" class="link no-icon">Realidade Virtual</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <script type="module" src="javascript/main.js"></script>
+  </body>
 </html>

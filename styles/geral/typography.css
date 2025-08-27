@@ -31,19 +31,26 @@
 .link {
   display: flex;
   align-items: center;
-  gap: 4px;
+  padding-right: 20px;
   position: relative;
+
+  &::before,
+  &::after {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease-in-out;
+  }
 
   &::before {
     content: url("../../assets/icons/gray-arrow.svg");
     opacity: 1;
-    transition: all 0.3s ease-in-out;
   }
 
   &::after {
     content: url("../../assets/icons/blue-arrow.svg");
     opacity: 0;
-    transition: all 0.3s ease-in-out;
   }
 
   &:hover {
@@ -59,6 +66,8 @@
   }
 
   &.no-icon {
+    padding-right: 0;
+
     &::before,
     &::after {
       display: none;
