@@ -1,0 +1,128 @@
+.highlight-block-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 328px;
+  height: auto;
+  margin: 0 auto 30px;
+
+  & .highlight-block-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+
+  & .highlight-block-left {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    height: auto;
+    padding-top: 12px;
+    border-top: 1px solid var(--stroke-color);
+
+    & .highlight-block-left-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      width: 100%;
+      height: auto;
+
+      & .highlight-block-left-card {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 16px;
+
+        & .content {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+        }
+      }
+    }
+  }
+
+  & .highlight-block-right {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+    height: auto;
+
+    & .highlight-block-title {
+      padding-top: 12px;
+      border-top: 1px solid var(--stroke-color);
+    }
+
+    & .highlight-block-right-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      & .highlight-block-right-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        width: 100%;
+        height: auto;
+
+        & .highlight-block-right-card {
+          width: 100%;
+          height: auto;
+          display: flex;
+          flex-direction: row;
+          gap: 16px;
+
+          & img {
+            width: 72px;
+            height: 72px;
+          }
+
+          & .content {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Responsivo */
+@media (min-width: 1024px) {
+  .highlight-block-wrapper {
+    flex-direction: row;
+    width: 688px;
+    margin: 0 auto 80px;
+
+    & .highlight-block-left,
+    & .highlight-block-right {
+      width: 328px;
+    }
+  }
+}
+
+@media (min-width: 1366px) {
+  .highlight-block-wrapper {
+    width: 1216px;
+
+    & .highlight-block-left {
+      width: 696px;
+
+      & .highlight-block-left-cards {
+        & .highlight-block-left-card {
+          flex-direction: row;
+        }
+      }
+    }
+
+    & .highlight-block-right {
+      width: 488px;
+    }
+  }
+}
