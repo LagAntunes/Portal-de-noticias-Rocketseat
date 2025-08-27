@@ -90,6 +90,7 @@
       "highlight item3"
       "item4  item5";
     width: 912px;
+    margin: 0 auto 80px;
 
     & .webdoor-item {
       width: 288px;
